@@ -52,7 +52,7 @@ export default class ReactionSpeed extends PureComponent {
   renderReactionSpeed = () => {
     return this.state.record === 0 ? null : (
       <div>
-        {this.state.record == 1000 ? <span className='penalty'>페널티</span> : '현재 반응속도'} :{' '}
+        {this.state.record === 1000 ? <span className='penalty'>페널티</span> : '현재 반응속도'} :{' '}
         {this.state.record}ms
       </div>
     );
